@@ -10,9 +10,9 @@ namespace Solid_Principle
 {
     internal class FileLogger : ILogger
     {
-        public void Log() 
+        public void Log(string message) 
         {
-            File.WriteAllText("log.txt", "EMERGENCY OCCURRED");
+            File.WriteAllText("log.txt", $"{message}");
         }
     }
 }

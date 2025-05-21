@@ -8,7 +8,7 @@ namespace Solid_Principle
 {
     internal class DatabaseLogger : ILogger
     {
-        public void Log()
+        public void Log(string message)
         {
             string[] loger = new string[] { "EMERGENCY OCCURRED" };  
         }

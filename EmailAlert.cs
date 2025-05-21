@@ -4,14 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace Solid_Principle
 {
-    internal class TelemetrySender
+    internal class EmailAlert : IEmailAlert
     {
-        public void SendTelemetry()
+        public void SendEmail(string emailAdress, string message)
         {
-            Console.WriteLine("Telemetry sent to Earth...");
+            Console.WriteLine($"{emailAdress} : {message}");
         }
     }
 }

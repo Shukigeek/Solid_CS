@@ -10,7 +10,8 @@ namespace Solid_Principle
     {
         static void Main(string[] args)
         {
-            
+            EmergencyHandler handler = new EmergencyHandler("shukihefler@gmail.com", "alert", "+9765345798");
+            handler.EmergencyShutdown();
         }
     }
 }
